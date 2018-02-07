@@ -2,7 +2,7 @@
 
 Es ist immer schwierig um bei ersten Codings auf den selben technischen Stand zu kommen. Doch das installieren der Umgebung sollte meines 
 Erachtens kein Hinderungsgrund zum Programmieren sein. Darum soll diese kleine Docker-Umgebung ein Anfang sein um 
-den Kids eine Umgebung bereit zu stellen.
+den Teilnehmern eine Umgebung bereit zu stellen.
 
 # Installation
 
