@@ -4,7 +4,7 @@ services:
     image: nginx:latest
     container_name: cad-nginx
     volumes:
-      - ./code:/mnt/code/
+      - ./code:/mnt/code/:rw
       - ./docker/web/:/etc/nginx/conf.d/
     ports:
       - 9292:80
@@ -16,7 +16,7 @@ services:
       build: ./docker/php/
       container_name: cad-php
       volumes:
-        - ./code:/mnt/code/
+        - ./code:/mnt/code/:rw
       depends_on:
         - mysql
       tty: true
