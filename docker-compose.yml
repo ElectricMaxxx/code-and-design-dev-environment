@@ -22,6 +22,18 @@ services:
       tty: true
       networks:
         - net3
+  node:
+      build: ./docker/node/
+      container_name: cad-node
+      volumes:
+        - ./code:/mnt/code/:rw
+      depends_on:
+        - mysql
+      tty: true
+      networks:
+        - net3
+      ports:
+        - 9393:8080
   mysql:
     image: mysql:latest
     container_name: cad-mysql
