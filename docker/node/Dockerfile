@@ -4,8 +4,6 @@ FROM node:carbon
 
 WORKDIR /mnt/code/default
 
-COPY package.json ./
-
 RUN npm install
 
 COPY . .

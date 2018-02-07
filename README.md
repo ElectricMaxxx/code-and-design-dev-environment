@@ -40,6 +40,6 @@ docker exec -it [container-name] bash
 Damit lande ich "in" dem Container und kann mich dort wie in einem Unix-System bewegen. will ich nur ein Command absetzen langt hier
 schon:
 ```bash
-	  docker exec [container-name] bash -c "cd /mnt/code && ls -l"
+docker exec [container-name] bash -c "cd /mnt/code && ls -l"
 ```
 Das beste ist: Sprecht mich einfach an, ich bin der mit dem kleinen Roller und dem Bart.
