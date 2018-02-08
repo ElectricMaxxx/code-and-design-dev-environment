@@ -1,5 +1,6 @@
 FROM node:carbon
 
-WORKDIR /mnt/code/default
+RUN mkdir nodeApp
+WORKDIR /nodeApp
 
 EXPOSE 8080
