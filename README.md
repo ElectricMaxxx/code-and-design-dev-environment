@@ -42,4 +42,12 @@ schon:
 ```bash
 docker exec [container-name] bash -c "cd /mnt/code && ls -l"
 ```
+
+## Start node
+
+```bash
+make node_setup
+```
+installiert npm und started den Server der hört.
+
 Das beste ist: Sprecht mich einfach an, ich bin der mit dem kleinen Roller und dem Bart.

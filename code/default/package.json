@@ -4,6 +4,8 @@
   "description": "Node.js on Docker",
   "author": "Maximilian Berghoff <maximilian.berghoff@gmx.de>",
   "main": "server.js",
+  "license": "MIT",
+  "repository": "not jet",
   "scripts": {
     "start": "node server.js"
   },
