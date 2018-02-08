@@ -1,0 +1,23 @@
+version: '3'
+services:
+  node:
+    build: .
+    container_name: cad-node
+    volumes:
+      - .:/myapp
+      - ./code/node:/myapp
+    ports:
+      - 9393:8080
+    networks:
+      - net5
+
+
+networks:
+  net5:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.13.0/24

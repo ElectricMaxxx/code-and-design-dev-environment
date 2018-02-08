@@ -2,27 +2,30 @@ version: '3'
 services:
   db:
     image: postgres
+    container_name: cad-postgress
     networks:
-      - net4
-  web:
+      - net6
+  ruby:
     build: .
+    container_name: cad-ruby
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
       - .:/myapp
+      - ./code/ruby:/myapp
     ports:
       - "3000:3000"
     depends_on:
       - db
     networks:
-      - net4
+      - net6
 
 
 networks:
-  net4:
+  net6:
     driver: bridge
     driver_opts:
       com.docker.network.enable_ipv6: "true"
     ipam:
       driver: default
       config:
-        - subnet: 192.168.13.0/24
+        - subnet: 192.168.14.0/24

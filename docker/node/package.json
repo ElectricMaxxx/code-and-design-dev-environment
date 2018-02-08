@@ -1,0 +1,15 @@
+{
+  "name": "docker_cad_default_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Maximilian Berghoff <maximilian.berghoff@gmx.de>",
+  "main": "server.js",
+  "license": "MIT",
+  "repository": "not jet",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
