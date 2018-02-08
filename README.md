@@ -46,8 +46,20 @@ docker exec [container-name] bash -c "cd /mnt/code && ls -l"
 ## Start node
 
 ```bash
-make node_setup
+cd docker/node
+docker-compose up -d
 ```
 installiert npm und started den Server der hört.
+
+## Start ruby
+
+```bash
+cd docker/ruby
+docker-compose up -d
+docker-compose run ruby rails new . --force --database=postgresql
+
+```
+
+Startet eine rails instanz.
 
 Das beste ist: Sprecht mich einfach an, ich bin der mit dem kleinen Roller und dem Bart.
